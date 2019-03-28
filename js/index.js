@@ -1,4 +1,24 @@
 $(document).ready(function() {
+	// main page list
+		$('div.list >ul').children().each(function (i)
+			{
+				if (i>0) { 
+					$(this).hide();
+				}
+				else {
+					$(this).show(); 
+				}
+		});
+		
+		$('div.list').find('a').click(function()
+		{
+			$('div.list >ul').children().hide();
+			
+			$($(this).attr('href')).show();
+			
+			return false;
+		});
+
 	//원페이지
 	
 	$(window).scroll(function (event) {
@@ -89,5 +109,6 @@ $(document).ready(function() {
 				scrollTop: 0
 			}, 800);
 		});
-	});
+	
+});
 		

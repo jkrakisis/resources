@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>DESIGN PROPOSAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="https://jkrakisis.github.io/resources/css/list_style.css"  />
+<style type="text/css">
+/* 폰 넓이값 조절*/
+.margin-left01 {margin-left:40px  !important;}
+.section dl {display:inline-block; float:none; }
+.section .phone {width:125px !important;}
+.pc dl {margin: 0 20px;}
+/* 날짜 들어가는라운드 박스 배경컬러 수정  */
+.bg-color{background-color:#175289 !important;}
+/* 비주얼영역 날짜탭 컬러 수정 background: rgba(R,G,B,투명도); RGB는 포토샵 컬러속성에 있음. */
+#lnb {background: rgba(60,78,173,0.5);}
+/* 상단 비주얼 컬러 수정background-color:#컬러값수정;*/
+.header {background:url('./images/mukup2.png') no-repeat 80% -340px;  background-color:#3041c3;  height:630px;}
+/* 왼쪽리스트 날짜 컬러 수정 */
+.section h2.style02 .text {color: #3041c3;}
+
+@media(max-width:1920px) {
+	.header {background-position: 120% -340px; }
+}
+@media(max-width:1860px) {
+	.header {background-position:120% -340px; }
+	.section .phone {width:110px !important;}
+}
+@media(max-width:1680px) {
+	.header {background-position:320% -340px;  }
+	.section {width:1200px; min-width:1200px; }
+	.section h2.style02 {left:-95px;}
+	.pc dl {margin: 0 0px;}
+	.section .phone {width:100px !important;}
+	.section.mobile.phone-list dl {width:250px !important;}
+}
+@media(max-width:1600px) {
+	.header {background-position:150px -340px;  }
+	.header h1 {margin-left:4%; width:auto;}
+	.section h2.style02 {left:-65px;}
+	.section h2.style02 .text::before {content: ''; position: absolute; right:-45px; }
+}
+</style>
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/jquery-migrate.min.js"></script>
+</head>
+<!-- 
+	<li>
+		<a href="#section01">2019.1.23</a>
+	</li>
+	위의 블록과 아래 리스트에서
+	<div class="section pc" id="section01"> ~</section> 은 같이 있어야 합니다. 
+	하나가 없으면 에러가 나서 작동을 하지 않습니다.
+	#section01 이 있으면 div에 id="section01"이 있어야함.
+ -->
+<body id="index">
+	<div class="header">
+		<h1 class="kor">질병관리본부<br>대표홈페이지 <br>반응형 웹 개편 <span>WEBSITE <br/>DESIGN <br/>PROPOSAL</span></h1>
+		<!-- <div id="lnb">
+			<ul class="lnb-menu" id="nav">
+				<li>
+					<a href="#section01">2019.1.23</a>
+				</li>
+				<li>
+					<a href="#section02">2019.1.22</a>
+				</li>
+				<li>
+					<a href="#section03">2019.1.21</a>
+				</li>
+			</ul>
+		</div> -->
+	</div>
+	<div id="container">
+		<!-- PC -->
+		<div class="section pc" id="section01">
+			<h2 class="style02"><span class="text">2019.1.23</span></h2>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./a/main01.html" target="_blank" title="새창열림"><img src="./a/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> </span></dd>
+			</dl>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./b/main01.html" target="_blank" title="새창열림"><img src="./b/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> </span></dd>
+			</dl>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./c/main01.html" target="_blank" title="새창열림"><img src="./c/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> </span></dd>
+			</dl>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./d/main01.html" target="_blank" title="새창열림"><img src="./d/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>D</strong> </span></dd>
+			</dl>
+		</div>
+		<!-- TABLET+PHONE -->
+		<div class="section mobile">
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./a/m375.html" target="_blank" title="새창열림"><img src="./a/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="pad">
+				<dt>
+					<div class="inner-pad"><a href="./a/m768.html" target="_blank" title="새창열림"><img src="./a/tablet.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> 타블릿</span></dd>
+			</dl>
+		
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./b/main01_m.html" target="_blank" title="새창열림"><img src="./b/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="pad">
+				<dt>
+					<div class="inner-pad"><a href="./b/main01_pad.html" target="_blank" title="새창열림"><img src="./b/tablet.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 타블릿</span></dd>
+			</dl>
+			
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./c/main01_m.html" target="_blank" title="새창열림"><img src="./c/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="pad">
+				<dt>
+					<div class="inner-pad"><a href="./c/main01_pad.html" target="_blank" title="새창열림"><img src="./c/tablet.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> 타블릿</span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./d/main01_m.html" target="_blank" title="새창열림"><img src="./d/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>D</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="pad">
+				<dt>
+					<div class="inner-pad"><a href="./d/main01_pad.html" target="_blank" title="새창열림"><img src="./d/tablet.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>D</strong> 타블릿</span></dd>
+			</dl>
+		</div>
+		<!-- PC -->
+		<div class="section pc" id="section02">
+			<h2 class="style02"><span class="text">2019.1.22</span></h2>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./a/main01.html" target="_blank" title="새창열림"><img src="./a/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> </span></dd>
+			</dl>
+			
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./b/main01.html" target="_blank" title="새창열림"><img src="./b/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 서브 </span></dd>
+			</dl>
+			
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./c/main01.html" target="_blank" title="새창열림"><img src="./c/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> 서브 </span></dd>
+			</dl>
+		</div>
+		<!-- PHONE -->
+		<div class="section mobile phone-list">
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./a/main01_m.html" target="_blank" title="새창열림"><img src="./a/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./b/main01_m.html" target="_blank" title="새창열림"><img src="./b/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./c/main01_m.html" target="_blank"  title="새창열림"><img src="./c/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> 모바일</span></dd>
+			</dl>
+		</div>
+		<!-- PHONE -->
+		<div class="section mobile phone-list">
+			<h2 class="style02"><span class="text">2019.1.21</span></h2>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./a/main01_m.html" target="_blank" title="새창열림"><img src="./a/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./b/main01_m.html" target="_blank" title="새창열림"><img src="./b/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 모바일</span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./c/main01_m.html" target="_blank"  title="새창열림"><img src="./c/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> 모바일</span></dd>
+			</dl>
+		</div>
+		<!-- PC -->
+		<div class="section pc" id="section03">
+			<h2 class="style02"><span class="text">2019.1.21</span></h2>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./a/main01.html" target="_blank" title="새창열림"><img src="./a/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> </span></dd>
+			</dl>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./b/main01.html" target="_blank" title="새창열림"><img src="./b/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 서브 </span></dd>
+			</dl>
+			
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./c/main01.html" target="_blank" title="새창열림"><img src="./c/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>C</strong> 서브 </span></dd>
+			</dl>
+		</div>
+		<!-- PC -->
+		<div class="section pc">
+			<h2 class="style02"><span class="text">2019.1.21</span></h2>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./a/main01.html" target="_blank" title="새창열림"><img src="./a/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> </span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./a/main01_m.html" target="_blank" title="새창열림"><img src="./a/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>A</strong> 모바일</span></dd>
+			</dl>
+			<dl>
+				<dt>
+					<div class="inner-desktop"><a href="./b/main01.html" target="_blank" title="새창열림"><img src="./b/main01.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 서브 </span></dd>
+			</dl>
+			<dl  class="phone">
+				<dt>
+					<div class="inner-phone"><a href="./b/main01_m.html" target="_blank" title="새창열림"><img src="./b/mobile.jpg" /><span><img src="images/zoom.png" width="36" height="36"></span></a></div>
+				</dt>
+				<dd class="text"><span>MAIN<strong>B</strong> 모바일</span></dd>
+			</dl>
+		</div>
+	</div>
+	<a href="#index" class="btn-top scrollup"><img src="https://jkrakisis.github.io/resources/images/top.gif" alt=""></a>
+</body>
+<!-- script -->
+
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/jquery.nav.js"></script>
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/index.js"></script>
+</html>

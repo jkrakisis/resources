@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 반응형 시안 아닐떄 -->
+<!-- <meta name="viewport" content="width=1920"> --> 
+<!-- 반응형 시안 일때 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>메인 시안 A</title>
+<style>
+body { position:relative;margin:0; padding:0; }
+img {border:0; margin:0; padding:0;}
+/* scrollbar */
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #eee;
+}
+body::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #eee;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color: #333;
+}
+/* .bg01 {background:url(./bg_01.gif) repeat-x; } */
+
+div.layout {height:100%;  margin:0 auto; padding:0; text-align:center;}
+div.list {width:100%;  min-width:1280px; height:100%; margin:0 auto;  text-align:center;  overflow:auto;}
+div.list ul {position:relative; width:100%; height:100%;  margin:0 auto; padding:0; list-style:none; overflow:hidden;}
+div.list ul li {float:left; width:100%; height:100%;  position:relative; margin:0 auto; overflow:hidden;  text-align:center;}
+div.list ul li p {position:relative; padding:0;  margin:0 auto; text-align:center;}
+/* 아래 리스트에서 height의 숫자와 url을 수정합니다. */
+div.list ul li#sian01 p {height:2744px; background:url(./main01.jpg) no-repeat center 0;}
+div.list ul li#sian02 p {height:2744px; background:url(./main02.jpg) no-repeat center 0;}
+div.list ul li#sian03 p {height:2744px; background:url(./main03.jpg) no-repeat center 0;}
+div.list ul li#sian04 p {height:2744px; background:url(./main04.jpg) no-repeat center 0;}
+div.list ul li img {margin:0;}
+div.list a.pic {display:block; width:1000px; min-width:1100px; height:4196px;  overflow:hidden;margin:0 auto;  text-align:center; text-indent:-999999px;}
+.hidden {text-indent:-999999px; height:0; position:absolute; top:-9999px;}
+
+.info {position:fixed; bottom:20px; right:20px; display:inline-block; padding:5px 20px;  font-size:12px; font-weight:bold; line-height:160%; border-radius:20px; -webkit-background-size:100px 65px;-moz-background-size:100px 65px;background-size:100px 65px;-webkit-transition:all .4s ease-out;-moz-transition:all .4s ease-out;-ms-transition:all .4s ease-out;-o-transition:all .4s ease-out;transition:all .4s ease-out; background-color:#bdc3c7; filter: alpha(opacity=35); -moz-opacity:0.35; -khtml-opacity: 0.35; opacity: 0.35;}
+.info:hover, .info:focus {font-size:16px; background-color:#000; color:#fff; border-radius:2px; filter: alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity: 0.7; opacity: 0.7;}
+.info a {color:#333; text-decoration:none;}
+.info:hover a {color:#fff; text-decoration:none;}
+
+.tablet , .mobile {display:none; text-align:center;}
+.tablet img , .mobile img {width:100%;}
+
+@media(max-width:1024px) {
+	.web {display:none; }
+	.tablet {display:block; }
+	.mobile{display:none;}
+}
+@media(max-width:767px) {
+	.web {display:none; }
+	.tablet {display:none;}
+	.mobile{display:block}
+}
+</style>
+</head>
+<body>
+<div class="layout web">
+	<div class="list">
+		<ul>
+	
+			<li id="sian01">
+				<p>
+					<a href="#sian02" class="pic">시안 디자인 </a>
+					<span class="info"><a href="#sian02">메인</a></span>
+				</p>
+			</li>
+			<li id="sian02">
+				<p>
+					<a href="#sian03" class="pic">시안 디자인 </a>
+					<span class="info"><a href="#sian03">맞춤메뉴펼침</a></span>
+				</p>
+			</li>
+			<li id="sian03">
+				<p>
+					<a href="#sian04" class="pic">시안 디자인 </a>
+					<span class="info"><a href="#sian04">두번째 비주얼</a></span>
+				</p>
+			</li>
+			<li id="sian04">
+				<p>
+					<a href="../index.html" class="pic" onclick="window.close()" title="창닫힘">시안 디자인 </a>
+					<span class="info"><a href="../index.html" >질병검색</a></span>
+				</p>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<div class="tablet">
+<!-- 태블릿이미지 -->
+<img src="./tablet.jpg" alt="">
+</div>
+<div class="mobile">
+<!-- 모바일이미지 -->
+<img src="./mobile.jpg" alt="">
+</div>
+</body>
+<!-- script -->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate.min.js"></script>
+<!-- 페이지공통 -->
+<script type="text/javascript">
+$(document).ready(function() {
+	//제이쿼리 스크립 추가할때
+	$('div.list >ul').children().each(function (i)
+		{
+			if (i>0) { 
+				$(this).hide();
+			}
+			else {
+				$(this).show(); 
+			}
+	});
+	
+	$('div.list').find('a').click(function()
+	{
+		$('div.list >ul').children().hide();
+		
+		$($(this).attr('href')).show();
+		
+		return false;
+	});
+});
+</script>
+</html>

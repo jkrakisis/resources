@@ -5,138 +5,8 @@
 <meta name="viewport" content="width=1400">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>태블릿 시안 B</title>
-<style>
-
-body { position:relative;margin:20px auto; padding:0; width:100%; text-align: center; background-color: #fefefe;    }
-img {border:0; margin:0; padding:0; display:block;}
-
-*,:after,:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-.device-view-wrapper[data-rotation=portrait] {
-    padding: 40px 20px;
-}
-.device-view-wrapper .speaker {
-    position: absolute;
-    top: 18px;
-    left: 50%;
-    width: 50px;
-    margin-left: -25px;
-    height: 5px;
-    background: rgba(128,128,128,.3);
-    border-radius: 5px
-}
-.device-view-wrapper {
-    display: inline-block;
-    margin: 0 auto 40px;
-	width:816px;
-    border: 1px solid rgba(0,0,0,.25);
-    border-radius: 20px;
-    background-color: #fff;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
-    cursor: move
-}
-.device-view {
-    position: relative;
-    z-index: 100;
-    background: #fff;
-    outline: rgba(0,0,0,.15) solid 1px;
-    cursor: default;
-	width:774px;
-	height:1024px;
-}
-.device-view[data-device-name^=iPad] .status-bar,.device-view[data-device-name^=iPhone] .status-bar {
-    background-color: #f7f7f7;
-    color: #333;
-    background-image: url(http://i1.daumcdn.net/uf/original/U01/oven/54238EDB4140C20013),url(http://i1.daumcdn.net/uf/original/U01/oven/54238EDB4553E80016)
-}
-.device-view .status-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    color: rgba(255,255,255,.9);
-    text-align: left;
-    background-color: #000;
-    background-image: url(http://i1.daumcdn.net/uf/original/U01/oven/54238EB7454BDD0020),url(http://i1.daumcdn.net/uf/original/U01/oven/54238EB83D69AF0021);
-    background-position: 0 0,100% 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat
-}
-.browser-area {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0
-}
-.browser-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transition: top .3s;
-    transition: top .3s;
-	height:1004px;
-	overflow-y:scroll;
-}
-.browser-content img {width:100%;}
-.device-view .status-bar span {
-    display: inline-block;
-    height: 100%;
-    margin-left: 0;
-	width:100%;
-    font-size: 12px;
-    line-height: 100%;
-	text-align: center;
-}
-.device-view-wrapper[data-hide-address=true] .browser-address {
-    overflow: hidden;
-    height: 0;
-}
-.url-wrapper {
-    position: absolute;
-    top: 0;
-    left: 260px;
-    right: 160px;
-    height: 50px;
-    padding-top: 8px
-}
-.browser-area iframe {
-    width: 100%;
-    height: 100%;
-}
-.device-view[data-device-name^=iPad] .status-bar,.device-view[data-device-name^=iPhone] .status-bar {
-    background-color: #f7f7f7;
-    color: #333;
-    background-image: url(http://i1.daumcdn.net/uf/original/U01/oven/54238EDB4140C20013),url(http://i1.daumcdn.net/uf/original/U01/oven/54238EDB4553E80016)
-}
-html { scrollbar-arrow-color: #efefef;
-        scrollbar-Track-Color: #efefef; 
-        scrollbar-base-color: #dfdfdf;
-        scrollbar-Face-Color: #dfdfdf;
-        scrollbar-3dLight-Color: #dfdfdf;         
-        scrollbar-DarkShadow-Color: #dfdfdf;
-        scrollbar-Highlight-Color: #dfdfdf;
-        scrollbar-Shadow-Color: #dfdfdf}
-/* Chrome, Safari용 스크롤 바 */
-::-webkit-scrollbar {width: 6px; height: 6px;  }
-::-webkit-scrollbar-button:start:decrement, 
-::-webkit-scrollbar-button:end:increment {display: block; width: 12px;height: 12px; background: url() rgba(0,0,0,.05);}
-::-webkit-scrollbar-track {     background: rgba(0,0,0,.05); }
-::-webkit-scrollbar-thumb {  background: rgba(0,0,0,.1);  }
-
-</style>
+<link rel="stylesheet" type="text/css" href="https://jkrakisis.github.io/resources/css/tablet.css"  />
 </head>
-
 <body>
 <div data-rotation="portrait" class="device-view-wrapper" data-hide-address="true">
 	<div class="speaker"></div>
@@ -165,13 +35,12 @@ html { scrollbar-arrow-color: #efefef;
 </div>
 </body>
 <!-- script -->
-<script type="text/javascript" src="http://jkrakisis.plani.kr/js/_core/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="http://jkrakisis.plani.kr/js/_core/plugin/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/jquery-migrate.min.js"></script>
 <!-- 페이지공통 -->
-<script type="text/javascript" src="http://jkrakisis.plani.kr/js/korean/index01.js"></script>
+<script type="text/javascript" src="https://jkrakisis.github.io/resources/js/index.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	//제이쿼리 스크립 추가할때
 });
 </script>
 </html>

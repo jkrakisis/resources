@@ -1,0 +1,184 @@
+
+@font-face { font-family: 'NotoSans'; src: url('../fonts/NotoSans-Thin.eot'); src: url('../fonts/NotoSans-Thin.eot?#iefix') format('embedded-opentype'),  url('../fonts/NotoSans-Thin.woff2') format('woff2'),  url('../fonts/NotoSans-Thin.woff') format('woff');
+	font-weight: 100; font-style: normal; }
+@font-face { font-family: 'NotoSans'; src: url('../fonts/NotoSans-Light.eot'); src: url('../fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/NotoSans-Light.woff2') format('woff2'),  url('../fonts/NotoSans-Light.woff') format('woff');
+	font-weight: 200; font-style: normal;
+}
+@font-face { font-family: 'NotoSans'; src: url('../fonts/NotoSans-DemiLight.eot'); src: url('../fonts/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/NotoSans-DemiLight.woff2') format('woff2'),  url('../fonts/NotoSans-DemiLight.woff') format('woff');
+	font-weight: 300; font-style: normal; }
+@font-face { font-family: 'NotoSans'; src: url('../fonts/NotoSans-Regular.eot'); src: url('../fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/NotoSans-Regular.woff2') format('woff2'),  url('../fonts/NotoSans-Regular.woff') format('woff');
+	font-weight: 400; font-style: normal; }
+@font-face { font-family: 'NotoSans'; src: url('../fonts/NotoSans-Medium.eot'); src: url('../fonts/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/NotoSans-Medium.woff2') format('woff2'),  url('../fonts/NotoSans-Medium.woff') format('woff'); 
+	font-weight: 500; font-style: normal; }
+@font-face { font-family: 'NotoSans'; src: url('../fonts/NotoSans-Bold.eot'); src: url('../fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/NotoSans-Bold.woff2') format('woff2'),  url('../fonts/NotoSans-Bold.woff') format('woff');
+   font-weight: 600; font-style: normal; }
+  @font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-light.eot');
+    src: url('../fonts/Gotham-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-book.eot');
+    src: url('../fonts/Gotham-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-medium.eot');
+    src: url('../fonts/Gotham-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-bold.eot');
+    src: url('../fonts/Gotham-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {margin:0; padding:0;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* scrollbar */
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #eee;
+}
+
+body::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #eee;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #333;
+}
+html {margin:0; padding:0; overflow-y:scroll; 	-webkit-text-size-adjust: none;	-moz-text-size-adjust: none;	-ms-text-size-adjust: none;}
+body {margin:0; padding:0;font-family:  'NotoSans',"맑은 고딕", Malgun Gothic, "돋움", Dotum, "굴림", Gulim, Tahoma, Verdana, AppleGothic, UnDotum, sans-serif; font-size: 14px;  line-height: 1.5; color: #444;height:100%; min-width:1360px;}
+img {border:0; margin:0; padding:0;}
+p.logo img {width:5%; height:5%; min-width:100px;}
+
+.header {position:relative; width:100%; min-width:1360px; min-height:182px; margin:0 0 30px; padding:0 ; }
+.header h1 {margin:0 auto; position: relative; width:1360px; padding:88px 30px 85px; color:#fff;  font-size: 48px; letter-spacing:0; font-weight: normal; }
+.header h1::before {content: ''; position: absolute; top:0; left:30px; width: 1px; height: 70px; background: #fff;}
+.header h1 span {display:block; color:#fff;  font-size:0.5em; font-weight:normal; font-family: Arial, Tahoma, Verdana, AppleGothic, UnDotum, sans-serif; opacity: 0.2; }
+.header h1.eng {padding:42px 0 30px; font-size:3.746em;  line-height: 1.2; letter-spacing:0; font-family: Arial, Tahoma, Verdana, AppleGothic, UnDotum, sans-serif;} /*68*/
+.header h1.eng span { font-size:0.5em; letter-spacing:0;}
+.header h1.kor {font-size:48px; font-family: 'NotoSans'; font-weight: 500;line-height: 1.2; letter-spacing:-0.03em;} /*25*/
+.header h1.kor span {margin-top:20px; font-size:36px; letter-spacing:0; font-family: 'Gotham'; font-weight: 500;}
+
+#lnb {position:absolute; bottom:0;  left:auto; right:auto;width:100%;  padding:0; z-index:50; min-height: 60px; background: rgba(21,30,101,0.5);  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+#lnb.fix {position:fixed; top:0; left:auto; right:auto; height: 60px; background: rgba(255,255,255,1); border-bottom:1px solid #eee;  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+div#lnb ul.lnb-menu {width:1360px; margin:0 auto;}
+div#lnb ul.lnb-menu li {position:relative; display:inline-block;text-align: center; padding:0; margin:0 10px; }
+
+div#lnb ul.lnb-menu li a {position:relative;display:inline-block; text-decoration: none; padding:22px 20px 20px ; line-height:1.0;  margin:0; color:#fff; letter-spacing: -0.01em; height:60px; font-size:18px; font-family: 'Gotham','NotoSans';font-weight: 500; }
+div#lnb ul.lnb-menu li.active a ,
+div#lnb ul.lnb-menu li a:hover {color:#fff; background: #040616; }
+div#lnb ul.lnb-menu li.active a:before {content: ''; position: absolute; left:50%; top:5px; width:5px ; height: 5px; border-radius: 5.5em; background-color: #3c47ac;}
+
+div#lnb.fix ul.lnb-menu li a {position:relative;display:inline-block; text-decoration: none; padding:22px 20px 20px ;  margin:0; color:#333; letter-spacing: -0.01em; height:15px; font-size:18px; font-family: 'Gotham','NotoSans';font-weight: 500; }
+div#lnb.fix ul.lnb-menu li.active a ,
+div#lnb.fix ul.lnb-menu li a:hover {color:#040616; background:none; }
+div#lnb.fix ul.lnb-menu li.active a:before {content: ''; position: absolute; left:50%; top:5px; width:5px ; height: 5px; border-radius: 5.5em; background-color: #3c47ac;}
+
+#container {margin: 70px 0 ;}
+/* #index h2 {font-size:1.0em; margin:0 auto 15px; padding:0; width:1075px; min-width:1075px; }
+#index h2 .box1 { font: 1.1em Arial;  display: inline-block; width: 9.5em; padding: .33em .5em .20em; background: #f47d93; color:#fff; margin: .5em 1em .5em 0; border-radius:20px; vertical-align:middle;  font-weight:normal;}
+#index h2 .box1 .icon {display:inline-block; width:20px; height:20px; background:url("../images/date_arrow.png") no-repeat  0 1px; vertical-align:middle;} */
+
+.section h2.style01 {font-size:1.0em; padding:0; font-size:1.0em;position: absolute; left:5px; top:-55px; padding:0; }
+.section h2.style01 .box1 { font: 1.1em 'Gotham','NotoSans',Arial;font-weight:500;  display: inline-block; min-width: 9.5em; text-align: left; padding: .33em .5em .20em; background: #f47d93; color:#fff; margin: .5em 1em .5em 0; border-radius:20px; vertical-align:middle; }
+.section h2.style01 .box1 .icon {display:inline-block; width:20px; height:20px; background:url("../images/date_arrow.png") no-repeat  0 1px; vertical-align:middle;}
+
+.section h2.style02 {padding:0; position: absolute; left:-135px; top:55px; }
+.section h2.style02 .text { font-size: 24px ; position: relative; font-family: 'Gotham','NotoSans'; letter-spacing: 0; font-weight:500; color: #3041c3; display: inline-block; text-align: left; width:120px; line-height:1.3em; }
+.section h2.style02 .text::before {content: ''; position: absolute; right:-75px; top:30px; width: 50px; height: 1px; background: #040616;}
+
+.section {position:relative; margin:50px auto 10px;  padding:0 0 23px 45px; width:1330px; min-width:1330px; text-align:left; vertical-align:bottom; }
+.section::before{content: ''; position: absolute; top:155px; right:0; left:0; width: 100%; height: 3px; background: #d9d9d9;}
+.section::after {content: ''; display: block; clear: both;}
+.section dl {padding:0 0 8px; margin:0 10px; /*float:left;*/ width:268px;}
+.section dt {display:block; position:relative; overflow:hidden; padding:0; margin:0;}
+.section dd {position:relative; overflow:hidden;}
+.section .text {padding:10px 0 ; margin:0; font-size:15px;  font-family: 'Gotham','NotoSans'; font-weight:400;color:#777; text-align:center; letter-spacing:-0.03em;}
+.section .text strong {display:inline-block; margin:0 3px; font-weight:bold; color:#555;}
+.section .title {display:block;  margin-bottom:7px; font-weight:bold; padding-left:5px; font-size:15px; color:#262626;}
+.section .title strong {display:inline-block; text-align:center; padding:5px 9px; font-size:20px; font-weight:bold; color:#fff; background-color:#5c5b5b; border-radius:50%;}
+.section dt:hover span {position:absolute; bottom:15px; right:15px; z-index:20; display: block; width:36px !important;}
+.section dt img {width:100%; vertical-align:top; border:0;}
+.section dt span {display:none;}
+.row {margin-top:-20px;}
+.section .concept {width:80%; font-size:13px !important; text-align:center; width:268px;}
+
+.section.mobile::before {top:179px; }
+.section.mobile .pad {width:135px;}
+.section.mobile dl {float:none;}
+
+.section.mobile.phone-list dl {width:285px !important;}
+.section.mobile.phone-list::before {top:155px; }
+
+
+div.inner-desktop {position:relative; margin:0 auto; width:268px; height:155px; overflow:hidden; background:url('../images/device_pc.png') no-repeat ;}
+div.inner-desktop a {position:absolute; left:34px; top:10px;display:block; margin:0 auto; text-align:center; width:200px; height:125px; background-color:#fff; overflow:hidden;}
+div.inner-desktop img {width:100%; margin:0 auto; }
+div.inner-desktop img.type01 {width:120% !important; margin-left:-10% !important;}
+
+div.inner-phone {position:relative; margin:0 auto;width:85px; height:155px; overflow:hidden; background:url('../images/device_mobile.gif') no-repeat ; }
+div.inner-phone a {position:absolute; top:5px; left:7px; width:69px; height:145px;  padding:0; margin:0; display:block; border-radius: 10px;  background-color:#fff; overflow:hidden;}
+
+div.inner-pad {position:relative; margin:0 auto;width:128px; height:179px; overflow:hidden; background:url('../images/device_pad.png') no-repeat ;}
+div.inner-pad a {position:absolute; left:5px; top:6px; padding:0; margin:0; display:block; width:117px; height:168px; background-color:#fff; overflow:hidden;}
+
+
+.btn-top {position: fixed; right: 0; bottom: 0;z-index: 52;-webkit-transition: all .3s ease;transition: all .3s ease;}
+.btn-top img {display: block;}
+.align-center {text-align:center;}
+.align-left {text-align:left !important;}
+
+.cencept {margin:-40px auto 20px;  width:1075px; min-width:1075px; overflow:hidden; }
+.cencept dl {margin-left:30px; width:40%; float:left;}
+.cencept dt {margin:0 0 5px; font-size:15px;}
+.cencept dd {font-size:13px !important;}
+.color-red {color:#ff0000;}
+
+.btn-zone {clear:both; width:100%; margin-top:50px;padding:30px 0; text-align:center;background-color:#cdcfd3;}
+.col-link { display: inline-block; margin: 0;}
+.col-link a {
+    background:none;
+	border:1px solid #070707;
+    color: #070707;
+  font-family: 'Spoqa Han Sans',"맑은 고딕", Malgun Gothic, "돋움", Dotum, "굴림", Gulim, Tahoma, Verdana, AppleGothic, UnDotum, sans-serif; font-size: 0.875em; 
+    font-size: 18px;
+    padding:11px 26px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.col-link a:hover {
+    background:#18b2df;
+	color:#fff;
+	border:1px solid #18b2df;
+}
+
+/* 폰 넓이값 조절*/
+div.phone dl {padding-left:10px; padding-right:10px;}
+div.phone02 {text-align:center;}
+div.phone02 dl {display:inline-block; float:none; padding-left:10px; padding-right:10px;}
+
+.right {float:right; overflow:hidden;}
+.right dl {padding-left:10px; padding-right:10px;}
